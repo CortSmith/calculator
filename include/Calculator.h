@@ -2,13 +2,14 @@
 /// Class: Calculator
 /// Description: Contains all functionality of the calculator system.
 
+#include <stack>
 
 class Calculator {
-    
+    std::stack<char *> stack;
     
 public:
     Calculator();
     ~Calculator();
-    
-    Calculator execute(char *[]);
+    double calculate(double, char, double);
+    double execute(int, char *[]);
 };

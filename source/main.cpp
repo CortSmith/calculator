@@ -5,17 +5,15 @@
 #include <iostream>
 using namespace std;
 
-#include "../include/Calculator.h"
+///#include "../include/Calculator.h"
 
 
 
 int main(int argc, char *argv[]) {
-    Calculator calc;
     
     if (argc > 1) {
         /// Parse arguments
         cout << "Calculating problem." << endl;
-        calc.execute(argv);
     }
     else {
         cout << "Error! No calculation given." << endl;
